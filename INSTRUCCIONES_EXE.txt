@@ -1,0 +1,17 @@
+# Instrucciones para crear el ejecutable (.exe) de la aplicación
+
+1. Asegúrate de tener los siguientes archivos en la misma carpeta:
+   - asesoria_gui.py
+   - logo.png
+
+2. Instala PyInstaller si no lo tienes:
+   pip install pyinstaller
+
+3. Ejecuta este comando en PowerShell desde la carpeta del proyecto:
+   pyinstaller --onefile --windowed --add-data "logo.png;." asesoria_gui.py
+
+4. El archivo ejecutable estará en la carpeta 'dist'.
+
+# Notas
+- Si usas imágenes o archivos adicionales, agrégalos con --add-data.
+- Si tienes problemas con rutas, revisa la documentación de PyInstaller.
